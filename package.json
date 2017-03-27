@@ -1,0 +1,19 @@
+{
+  "name": "trainhw",
+  "version": "4.4.5",
+  "description": "train moment.js example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "megha iyer",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "browserify-shim": "^3.8.14",
+    "firebase": "^3.7.3",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "watchify": "^3.9.0"
+  }
+}

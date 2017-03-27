@@ -1,0 +1,25 @@
+body{
+	background-color: #444eee;
+	color:#ffffff;
+	font-family: monospace;
+}
+.submitbtn{
+
+	width: 100%;
+}
+th{
+   text-align: center;
+   background-color: #39FF14;
+}
+.container{
+	overflow-y: overlay;
+}
+#submit{
+
+	background-color: #39FF14;
+	color:#ffffff;
+
+}
+.form-control{
+	font-family: monospace;
+}

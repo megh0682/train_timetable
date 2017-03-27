@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Time Table</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>	
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+</head>
+<body>
+<div class="container">
+  <h2 class="text-center">Train Time Table</h2>
+  <div class="tablewrapper"><!-- table div starts-->     
+  <table class="table table-bordered table-hover text-center" id="table_train">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Source</th>
+        <th>Destination</th>
+        <th>Arrival in minutes </th>
+        <th>Next train time</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  </div><!-- table div end-->
+  <!--form to add a new train -->
+ <form>
+  <div class="form-group" id="addTrainForm">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="train_name" placeholder="enter train name" required>
+    <label for="formGroupExampleInput">Source</label>
+    <input type="text" class="form-control" id="source" placeholder="source" required>
+    <label for="formGroupExampleInput">Destination</label>
+    <input type="text" class="form-control" id="destination" placeholder="destination" required>
+    <label for="formGroupExampleInput">Start Time [Military: hh:mm]</label>
+    <input type="text" class="form-control" id="start_time" placeholder="start time [hh:mm]" required>
+    <label for="formGroupExampleInput">Frequency</label>
+    <input type="number" class="form-control" id="frequency" placeholder="frequency(in minutes)" required>
+    <label for="formGroupExampleInput"></label>
+    <div id="validation" class="validation"></div>
+    <input type="button" class="form-control submitbtn" id="submit" value="Add" placeholder="add a new train" required>
+  </div>
+</form>
+</div>
+<script src="./assets/js/bundle.js"></script>
+</body>
+</html>
